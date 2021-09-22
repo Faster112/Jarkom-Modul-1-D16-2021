@@ -1,7 +1,10 @@
 # Jarkom-Modul-1-D16-2021
 ## Soal 1
-Sebutkan webserver yang digunakan pada [ichimarumaru.tech](ichimarumaru.tech)
-
+Sebutkan webserver yang digunakan pada "[ichimarumaru.tech](ichimarumaru.tech)"
+### Jawab
+* #### Filter
+`ip.src == 167.172.77.139 && http.server`
+* #### Penjelasan
 ## Soal 2
 ## Soal 3
 ## Soal 4
