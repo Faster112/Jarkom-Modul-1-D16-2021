@@ -1,6 +1,6 @@
 # Jarkom-Modul-1-D16-2021
 ## Soal 1
-Sebutkan webserver yang digunakan pada "[ichimarumaru.tech](ichimarumaru.tech)"!
+Sebutkan webserver yang digunakan pada "[ichimarumaru.tech](http://ichimarumaru.tech)"!
 ### Jawab
 * #### Filter
 `ip.src == 167.172.77.139 && http.server`
@@ -15,7 +15,7 @@ Temukan paket dari **web-web** yang menggunakan **basic authentication** method!
 `http.authbasic` digunakan untuk menemukan paket-paket web yang menggunakan method "basic authentication"
 ![Soal2](assets/Soal2.png)
 ## Soal 3
-Ikuti perintah di [basic.ichimarumaru.tech](basic.ichimarumaru.tech)! Username dan password bisa didapatkan dari file *.pcapng*!
+Ikuti perintah di [basic.ichimarumaru.tech](http://basic.ichimarumaru.tech)! Username dan password bisa didapatkan dari file *.pcapng*!
 * #### Filter
 `http contains "basic"`
 * #### Penjelasan
@@ -33,7 +33,7 @@ Temukan paket **mysql** yang mengandung **perintah query select**!
 `mysql contains "select"` digunakan untuk mendapatkan query "select". Karena "contains" merupakan *case sensitive* maka ditambah lagi dengan `mysql contains "SELECT"` untuk mendapatkan query "SELECT".
 ![Soal4](assets/Soal4.png)
 ## Soal 5
-Login ke [portal.ichimarumaru.tech](portal.ichimarumaru.tech) kemudian ikuti perintahnya! Username dan password bisa didapat dari **query insert** pada table **users** dari file .pcap!
+Login ke [portal.ichimarumaru.tech](http://portal.ichimarumaru.tech) kemudian ikuti perintahnya! Username dan password bisa didapat dari **query insert** pada table **users** dari file .pcap!
 * #### Filter
 `mysql contains "INSERT" || mysql contains "insert"`
 * #### Penjelasan
